@@ -1,0 +1,35 @@
+#N canvas 646 118 553 539 12;
+#X obj 155 92 inlet~;
+#X obj 216 91 inlet;
+#X obj 267 91 inlet;
+#X obj 154 323 outlet~;
+#X obj 352 328 bang~;
+#X obj 352 354 t b b;
+#X obj 352 380 timer;
+#X floatatom 352 409 5 0 0 0 - - -;
+#X obj 352 437 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 359 147 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 340 114 inlet;
+#X msg 414 150 set \$1 1;
+#X obj 414 116 inlet;
+#X obj 341 213 switch~ 4096 1 1;
+#X obj 217 193 osc~;
+#X obj 154 233 *~;
+#X obj 154 275 *~;
+#X connect 0 0 15 0;
+#X connect 1 0 14 0;
+#X connect 2 0 16 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 10 0 9 0;
+#X connect 10 0 13 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 0;
+#X connect 14 0 15 1;
+#X connect 15 0 16 0;
+#X connect 16 0 3 0;

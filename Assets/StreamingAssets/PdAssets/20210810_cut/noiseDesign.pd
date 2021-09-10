@@ -1,0 +1,16 @@
+#N canvas 653 149 450 300 12;
+#X obj 103 105 pink~;
+#X obj 135 277 output~;
+#X obj 166 133 sig~;
+#X floatatom 166 102 5 0 0 0 - - -;
+#X msg 454 83 \; pd dsp 0;
+#X msg 454 44 \; pd dsp 1;
+#X obj 118 203 vcf~ 1;
+#X obj 228 139 hsl 128 15 0 200 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 6 0;
+#X connect 2 0 6 1;
+#X connect 3 0 2 0;
+#X connect 6 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 6 2;

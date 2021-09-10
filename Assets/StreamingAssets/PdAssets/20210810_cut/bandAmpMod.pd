@@ -1,0 +1,154 @@
+#N canvas 44 25 1396 847 12;
+#X floatatom 134 130 5 0 0 0 - - -;
+#X obj 179 130 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 130 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 178 327 blockSize;
+#X obj 60 397 inlet~;
+#X obj 146 748 outlet~;
+#X msg 378 56 63;
+#X floatatom 134 160 5 0 0 0 - - -;
+#X obj 179 160 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 160 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 134 188 5 0 0 0 - - -;
+#X obj 179 188 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 188 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 134 218 5 0 0 0 - - -;
+#X obj 179 218 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 218 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 134 248 5 0 0 0 - - -;
+#X obj 179 248 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 248 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 134 276 5 0 0 0 - - -;
+#X obj 179 276 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 276 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 134 306 5 0 0 0 - - -;
+#X obj 179 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 112 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 474 28 loadbang;
+#X msg 377 84 160;
+#X msg 377 115 400;
+#X msg 376 143 1000;
+#X msg 377 174 2500;
+#X msg 377 205 6250;
+#X msg 376 233 16000;
+#X obj 186 106 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 100 488 ampMod, f 22;
+#X obj 411 494 ampMod, f 22;
+#X obj 733 499 ampMod, f 22;
+#X obj 1044 504 ampMod, f 22;
+#X obj 1051 662 ampMod, f 22;
+#X obj 740 657 ampMod, f 22;
+#X obj 418 652 ampMod, f 22;
+#X obj 112 332 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 146 710 catch~ outAmpMod;
+#X obj 99 535 throw~ outAmpMod;
+#X obj 410 540 throw~ outAmpMod;
+#X obj 417 698 throw~ outAmpMod;
+#X obj 732 545 throw~ outAmpMod;
+#X obj 739 703 throw~ outAmpMod;
+#X obj 1050 708 throw~ outAmpMod;
+#X obj 1043 550 throw~ outAmpMod;
+#X obj 27 57 inlet;
+#X connect 0 0 33 1;
+#X connect 1 0 33 2;
+#X connect 2 0 33 3;
+#X connect 2 0 3 0;
+#X connect 3 0 33 4;
+#X connect 3 0 34 4;
+#X connect 3 0 35 4;
+#X connect 3 0 36 4;
+#X connect 3 0 37 4;
+#X connect 3 0 38 4;
+#X connect 3 0 39 4;
+#X connect 4 0 33 0;
+#X connect 4 0 34 0;
+#X connect 4 0 35 0;
+#X connect 4 0 36 0;
+#X connect 4 0 37 0;
+#X connect 4 0 38 0;
+#X connect 4 0 39 0;
+#X connect 6 0 0 0;
+#X connect 7 0 34 1;
+#X connect 8 0 34 2;
+#X connect 9 0 34 3;
+#X connect 9 0 3 0;
+#X connect 10 0 35 1;
+#X connect 11 0 35 2;
+#X connect 12 0 35 3;
+#X connect 12 0 3 0;
+#X connect 13 0 36 1;
+#X connect 14 0 36 2;
+#X connect 15 0 36 3;
+#X connect 15 0 3 0;
+#X connect 16 0 39 1;
+#X connect 17 0 39 2;
+#X connect 18 0 39 3;
+#X connect 18 0 3 0;
+#X connect 19 0 38 1;
+#X connect 20 0 38 2;
+#X connect 21 0 38 3;
+#X connect 21 0 3 0;
+#X connect 22 0 37 1;
+#X connect 23 0 37 2;
+#X connect 24 0 37 3;
+#X connect 24 0 3 0;
+#X connect 25 0 6 0;
+#X connect 25 0 26 0;
+#X connect 25 0 27 0;
+#X connect 25 0 29 0;
+#X connect 25 0 28 0;
+#X connect 25 0 30 0;
+#X connect 25 0 31 0;
+#X connect 26 0 7 0;
+#X connect 27 0 10 0;
+#X connect 28 0 13 0;
+#X connect 29 0 16 0;
+#X connect 30 0 19 0;
+#X connect 31 0 22 0;
+#X connect 32 0 1 0;
+#X connect 32 0 8 0;
+#X connect 32 0 11 0;
+#X connect 32 0 14 0;
+#X connect 32 0 17 0;
+#X connect 32 0 20 0;
+#X connect 32 0 23 0;
+#X connect 33 0 42 0;
+#X connect 34 0 43 0;
+#X connect 35 0 45 0;
+#X connect 36 0 48 0;
+#X connect 37 0 47 0;
+#X connect 38 0 46 0;
+#X connect 39 0 44 0;
+#X connect 40 0 24 0;
+#X connect 40 0 21 0;
+#X connect 40 0 18 0;
+#X connect 40 0 15 0;
+#X connect 40 0 12 0;
+#X connect 40 0 9 0;
+#X connect 40 0 2 0;
+#X connect 40 0 3 0;
+#X connect 41 0 5 0;
+#X connect 49 0 2 0;
+#X connect 49 0 9 0;
+#X connect 49 0 12 0;
+#X connect 49 0 15 0;
+#X connect 49 0 18 0;
+#X connect 49 0 21 0;
+#X connect 49 0 24 0;
+#X coords 0 -1 1 1 220 270 1 100 100;
